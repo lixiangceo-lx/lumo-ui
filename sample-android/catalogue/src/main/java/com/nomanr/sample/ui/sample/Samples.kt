@@ -11,6 +11,7 @@ import com.nomanr.sample.ui.sample.ComponentId.CHIP
 import com.nomanr.sample.ui.sample.ComponentId.DIVIDER
 import com.nomanr.sample.ui.sample.ComponentId.ICON
 import com.nomanr.sample.ui.sample.ComponentId.ICON_BUTTON
+import com.nomanr.sample.ui.sample.ComponentId.K_LINE_CHART
 import com.nomanr.sample.ui.sample.ComponentId.MODAL_BOTTOM_SHEET
 import com.nomanr.sample.ui.sample.ComponentId.NAVIGATION_BAR
 import com.nomanr.sample.ui.sample.ComponentId.OTP_TEXT_FIELD
@@ -35,6 +36,7 @@ import com.nomanr.sample.ui.sample.samples.ChipSample
 import com.nomanr.sample.ui.sample.samples.DividerSample
 import com.nomanr.sample.ui.sample.samples.IconButtonSample
 import com.nomanr.sample.ui.sample.samples.IconSample
+import com.nomanr.sample.ui.sample.samples.KLineChartSample
 import com.nomanr.sample.ui.sample.samples.ModalBottomSheetSample
 import com.nomanr.sample.ui.sample.samples.NavigationBarSample
 import com.nomanr.sample.ui.sample.samples.OTPTextFieldSample
@@ -62,6 +64,7 @@ enum class ComponentId(val label: String) {
     DIVIDER("Divider"),
     ICON("Icon"),
     ICON_BUTTON("Icon Button"),
+    K_LINE_CHART("K Line Chart"),
     MODAL_BOTTOM_SHEET("Modal Bottom Sheet"),
     NAVIGATION_BAR("Navigation Bar"),
     OTP_TEXT_FIELD("OTP Text Field"),
@@ -99,6 +102,7 @@ data class Component internal constructor(
                 Component(id = DIVIDER),
                 Component(id = ICON),
                 Component(id = ICON_BUTTON),
+                Component(id = K_LINE_CHART),
                 Component(id = MODAL_BOTTOM_SHEET),
                 Component(id = NAVIGATION_BAR, showTopBar = false),
                 Component(id = OTP_TEXT_FIELD),
@@ -149,6 +153,7 @@ object Samples {
                 SURFACE to { SurfaceSample() },
                 SWITCH to { SwitchSample() },
                 TOOLTIP to { TooltipSample() },
+                K_LINE_CHART to { KLineChartSample() },
             )
 
     fun hasComponent(componentName: String): Boolean {
